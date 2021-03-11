@@ -1,20 +1,32 @@
 import React, { useState } from 'react';
-const green = '#00ff00';
+const white = 'white';
+const black = 'black';
+const text = "This is some text"
+const weight = "100"
+const size = "2em"
 
 
+// we need to pass down, or pull from state
+// an object with { font, size, weight }
 export const FontListItem = () => {
-    const [font, setFont] = useState("")
-    const [fontColor, setFontColor] = useState(green)
+    const [font, setFont] = useState("Verdana")
+    const [backgroundColor, setBackgroundColor] = useState(white)
+    const [fontColor, setFontColor] = useState(black)
+    const [fontWeight, setFontWeight] = useState(weight)
+    const [renderText, setRenderText] = useState(text)
+    const [fontSize, setFontSize] = useState(size)
 
     return (
         <>
             <h2>Hello you...</h2>
             <label style={{
-                background: fontColor,
-                border: "4px dotted blue",
-                marginTop: "5rem"
+                fontFamily: font,
+                fontWeight: fontWeight,
+                fontSize: size,
+                background: backgroundColor,
+                color: fontColor
             }} >
-                This is some more text
+                {renderText}
             </label>
         </ >
     )
