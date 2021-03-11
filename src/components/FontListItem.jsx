@@ -22,7 +22,7 @@ export const FontListItem = () => {
             <label style={{
                 fontFamily: font,
                 fontWeight: fontWeight,
-                fontSize: size,
+                fontSize: fontSize,
                 background: backgroundColor,
                 color: fontColor
             }} >
