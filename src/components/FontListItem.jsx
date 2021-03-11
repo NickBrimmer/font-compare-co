@@ -18,16 +18,18 @@ export const FontListItem = () => {
 
     return (
         <>
-            <h2>Hello you...</h2>
-            <label style={{
-                fontFamily: font,
-                fontWeight: fontWeight,
-                fontSize: fontSize,
-                background: backgroundColor,
-                color: fontColor
-            }} >
-                {renderText}
-            </label>
+            <li style={{ listStyle: 'none' }} >
+                <label style={{
+                    fontFamily: font,
+                    fontWeight: fontWeight,
+                    fontSize: fontSize,
+                    background: backgroundColor,
+                    color: fontColor,
+
+                }} >
+                    {renderText}
+                </label>
+            </li>
         </ >
     )
 }
