@@ -9,7 +9,7 @@ const size = "2em"
 // we need to pass down, or pull from state
 // an object with { font, size, weight }
 export const FontListItem = () => {
-    const [font, setFont] = useState("Verdana")
+    const [font, setFont] = useState("Georgia")
     const [backgroundColor, setBackgroundColor] = useState(white)
     const [fontColor, setFontColor] = useState(black)
     const [fontWeight, setFontWeight] = useState(weight)
